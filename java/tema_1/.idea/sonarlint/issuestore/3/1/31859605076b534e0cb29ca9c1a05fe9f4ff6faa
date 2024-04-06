@@ -1,0 +1,16 @@
+
+c
+java:S2095"HUse try-with-resources or close this "FileReader" in a "finally" clause.(ù‚ùÃûÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(Ğó¼Á
+@	java:S106"+Replace this use of System.out by a logger.(ÿÊşÛ
+@	java:S106&"+Replace this use of System.out by a logger.(¸±ƒ²
+@	java:S106'"+Replace this use of System.out by a logger.(î¢Ù
+@	java:S106*"+Replace this use of System.out by a logger.(û­‘Õ
+E	java:S106+"+Replace this use of System.out by a logger.(ú²Éşÿÿÿÿ
+Q	java:S125."<This block of commented-out lines of code should be removed.(ÕË«ó
+]
+java:S1128"BRemove this unused import 'ro.mpp2024.concertpro.dao.model.Order'.(…¬ò¬şÿÿÿÿ
+y
+java:S1128"cRemove this unused import 'ro.mpp2024.concertpro.dao.repository.order_repository.IOrderRepository'.(›òÃ±
+z
+java:S1128"dRemove this unused import 'ro.mpp2024.concertpro.dao.repository.order_repository.OrderDbRepository'.(‚”¶

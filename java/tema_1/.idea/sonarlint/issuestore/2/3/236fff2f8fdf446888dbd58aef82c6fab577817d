@@ -1,0 +1,8 @@
+
+—
+java:S1186<"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(œØ˜¢
+œ
+java:S1186@"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(£¡æ˜şÿÿÿÿ
+E	java:S1065"+Replace this use of System.err by a logger.(¥øÂ´úÿÿÿÿ
+e
+java:S1128"ORemove this unused import 'ro.mpp2024.concertpro.dao.validator.OrderValidator'.(ŒÅ‚ú
