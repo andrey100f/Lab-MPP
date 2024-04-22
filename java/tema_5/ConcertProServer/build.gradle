@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'concertpro.server'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(":ConcertProModel")
+    implementation project(":ConcertProServices")
+    implementation project(":ConcertProPersistance")
+    implementation project(":ConcertProNetworking")
+
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+application {
+    mainClass = 'concertpro.server.StartServer'
+}
+
+test {
+    useJUnitPlatform()
+}
