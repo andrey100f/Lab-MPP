@@ -1,0 +1,8 @@
+rootProject.name = "ConcertPro"
+include 'ConcertProClient'
+include 'ConcertProModel'
+include 'ConcertProNetworking'
+include 'ConcertProPersistance'
+include 'ConcertProServer'
+include 'ConcertProServices'
+

@@ -1,0 +1,65 @@
+syntax="proto3";
+package concertpro.network.protobuf;
+
+message Order {
+  int64 id = 1;
+  string buyerName = 2;
+  Spectacle spectacle = 3;
+  int64 numberOfSeats = 4;
+}
+
+message Spectacle {
+  int64 id = 1;
+  string artistName = 2;
+  string spectacleDate = 3;
+  string spectaclePlace = 4;
+  int64 seatsAvailable = 5;
+  int64 seatsSold = 6;
+}
+
+message User {
+  int64 id = 1;
+  string username = 2;
+  string password = 3;
+  bool loggedIn = 4;
+}
+
+message Request {
+  enum Type {
+    UNKNOWN = 0;
+    LOGIN = 1;
+    LOGOUT = 2;
+    GET_SPECTACLES = 3;
+    GET_FILTERED_SPECTACLES = 4;
+    ADD_ORDER = 5;
+    SPECTACLES_UPDATED = 6;
+  }
+
+  Type type = 1;
+
+  oneof payload {
+    Order order = 2;
+    User user = 3;
+    string date = 4;
+  }
+
+}
+
+message Response {
+  enum Type {
+    UNKNOWN = 0;
+    OK = 1;
+    ERROR = 2;
+    GET_SPECTACLES = 3;
+    GET_FILTERED_SPECTACLES = 4;
+    ADDED_ORDER = 5;
+    SPECTACLES_UPDATED = 6;
+  }
+
+  Type type = 1;
+
+  string error = 2;
+  repeated Spectacle spectacles = 3;
+  User user = 4;
+
+}
